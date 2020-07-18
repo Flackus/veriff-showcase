@@ -15,6 +15,11 @@ module.exports = function(environment) {
         APP: {}
     };
 
+    ENV.TMDB_KEY = process.env.TMDB_KEY;
+    if (!ENV.TMDB_KEY) {
+        throw new Error('TMDB auth key is not provided');
+    }
+
     if (environment === 'test') {
         ENV.locationType = 'none';
 

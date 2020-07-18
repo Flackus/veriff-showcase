@@ -1,0 +1,8 @@
+<div class="movies-list">
+   <h2>{{@title}}</h2>
+   <ul>
+        {{#each @movies as |movie|}}
+            <Movie-thumb @movie={{movie}} />
+        {{/each}}
+    </ul>
+</div>
