@@ -1,0 +1,17 @@
+<div class="trending thumbs-list">
+    <h2>
+        {{@title}}
+        {{#if @isWeek}}
+            this week
+            <LinkTo class="change-time-period" @route="index" @query={{hash timeWindow="day"}}>today</LinkTo>
+        {{else}}
+            today
+            <LinkTo class="change-time-period" @route="index" @query={{hash timeWindow="week"}}>this week</LinkTo>
+        {{/if}}
+    </h2>
+    <ul>
+        {{#each @movies as |movie|}}
+            <Movie-thumb @movie={{movie}} />
+        {{/each}}
+    </ul>
+</div>

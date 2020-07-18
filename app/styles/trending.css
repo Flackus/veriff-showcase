@@ -1,4 +1,4 @@
-.movies-list h4
+.trending h4
 {
     order: 3;
 
@@ -13,7 +13,7 @@
     font-size: 14px;
 }
 
-.movies-list .rating
+.trending .rating
 {
     position: absolute;
     right: -10px;
@@ -26,20 +26,30 @@
     font-size: 10px;
 }
 
-.movies-list .rating.good
+.trending .rating.good
 {
     background: green;
     color: #fff;
 }
 
-.movies-list .rating.average
+.trending .rating.average
 {
     background: yellow;
     color: #000;
 }
 
-.movies-list .rating.bad
+.trending .rating.bad
 {
     background: red;
     color: #fff;
+}
+
+.trending .change-time-period
+{
+    display: inline-block;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+
+    color: blue;
 }
