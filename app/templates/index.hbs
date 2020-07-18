@@ -1,2 +1,5 @@
-<Welcome />
+<Search />
+{{#if @model.searchResults}}
+    <Search-results @movies={{@model.searchResults}} />
+{{/if}}
 <Trending @movies={{@model.trending}} @title="Trending" @isWeek={{@model.isWeek}} />

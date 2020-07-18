@@ -1,0 +1,8 @@
+<div class="search-results movie-list thumbs-list">
+    <h2>Search results</h2>
+    <ul>
+        {{#each @movies as |movie|}}
+            <Movie-thumb @movie={{movie}} />
+        {{/each}}
+    </ul>
+</div>

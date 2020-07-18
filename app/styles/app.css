@@ -1,6 +1,7 @@
 @import './main.css';
-@import './welcome.css';
+@import './search.css';
 @import './thumbs-list.css';
+@import './movie-list.css';
 @import './trending.css';
 @import './cast-list.css';
 @import './movie-info.css';
