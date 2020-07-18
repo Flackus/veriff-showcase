@@ -4,7 +4,7 @@ export function rating([rating]) {
     if (rating > 8) {
         return 'good';
     }
-    if (rating > 6.5) {
+    if (rating > 5.5) {
         return 'average';
     }
     return 'bad';
