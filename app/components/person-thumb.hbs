@@ -1,0 +1,9 @@
+<li>
+    <h4>{{@person.name}}</h4>
+    <h5>{{@person.character}}</h5>
+    {{#if @person.profile_path}}
+        <img src="https://image.tmdb.org/t/p/w220_and_h330_face/{{@person.profile_path}}" alt="{{@person.name}}" />
+    {{else}}
+        <div class="no-image" />
+    {{/if}}
+</li>

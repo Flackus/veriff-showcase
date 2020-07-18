@@ -1,0 +1,45 @@
+.movies-list h4
+{
+    order: 3;
+
+    width: 100px;
+    margin-top: 5px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.movies-list .rating
+{
+    position: absolute;
+    right: -10px;
+    top: 0;
+
+    padding: 2px 3px 3px;
+    border-radius: 3px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+.movies-list .rating.good
+{
+    background: green;
+    color: #fff;
+}
+
+.movies-list .rating.average
+{
+    background: yellow;
+    color: #000;
+}
+
+.movies-list .rating.bad
+{
+    background: red;
+    color: #fff;
+}

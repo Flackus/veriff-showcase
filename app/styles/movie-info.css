@@ -1,0 +1,52 @@
+.movie-info
+{
+    margin: 0 -30px;
+    padding: 40px 60px 0;
+    min-height: 300px;
+
+    background-color: #000;
+    background-size: cover;
+
+    color: #fff;
+}
+
+.movie-info img
+{
+    float: left;
+
+    height: 260px;
+
+    margin-right: 20px;
+}
+
+.movie-info h2
+{
+    margin-bottom: 10px;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.movie-info h3
+{
+    margin: 20px 0 10px;
+
+    font-size: 17px;
+}
+
+.movie-info .info,
+.movie-info .overview
+{
+    line-height: 1.5;
+
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.movie-info .text-box
+{
+    min-height: 220px;
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.5);
+}

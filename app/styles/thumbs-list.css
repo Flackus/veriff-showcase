@@ -1,0 +1,56 @@
+.thumbs-list
+{
+    margin: 15px 0 30px;
+}
+
+.thumbs-list h2
+{
+    margin-bottom: 10px;
+
+    font-size: 15px;
+
+    color: #212c39;
+}
+
+.thumbs-list ul
+{
+    display: flex;
+
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.thumbs-list ul,
+.thumbs-list li
+{
+    list-style: none;
+}
+
+.thumbs-list img,
+.thumbs-list .no-image
+{
+    width: 100px;
+    height: 150px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.thumbs-list li
+{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.thumbs-list li a
+{
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+}

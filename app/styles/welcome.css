@@ -1,0 +1,36 @@
+.welcome
+{
+    margin: 0 -30px;
+    padding: 40px 20px;
+
+    color: #fff;
+
+    background: url(../assets/images/welcome-back.jpg) no-repeat;
+    background-position: 0 -100px;
+    background-size: cover;
+    filter: grayscale(100%);
+
+    text-align: center;
+}
+
+.welcome h2,
+.welcome h3
+{
+    font-weight: normal;
+}
+
+.welcome h3
+{
+    margin-top: 10px;
+}
+
+.welcome input
+{
+    width: 30%;
+
+    margin-top: 40px;
+    padding: 5px 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

@@ -20,6 +20,8 @@ module.exports = function(environment) {
         throw new Error('TMDB auth key is not provided');
     }
 
+    ENV.TMBD_API_BASE_URL = 'https://api.themoviedb.org/3'
+
     if (environment === 'test') {
         ENV.locationType = 'none';
 

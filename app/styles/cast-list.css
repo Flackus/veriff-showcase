@@ -1,0 +1,19 @@
+.cast-list h4
+{
+    order: 2;
+
+    margin-top: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cast-list h5
+{
+    order: 3;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+    font-weight: normal;
+}
