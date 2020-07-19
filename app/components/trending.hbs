@@ -3,7 +3,7 @@
         {{@title}}
         {{#if @isWeek}}
             this week
-            <LinkTo class="change-time-period" @route="index" @query={{hash timeWindow="day"}}>today</LinkTo>
+            <LinkTo class="change-time-period" @route="index" @query={{hash timeWindow=null}}>today</LinkTo>
         {{else}}
             today
             <LinkTo class="change-time-period" @route="index" @query={{hash timeWindow="week"}}>this week</LinkTo>
