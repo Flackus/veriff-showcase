@@ -7,4 +7,6 @@ export default class MovieModel extends Model {
     @attr release_date;
     @attr genres;
     @attr overview;
+    @attr content_rating;
+    @attr do_verification;
 }

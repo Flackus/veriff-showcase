@@ -6,12 +6,20 @@
     <div class="text-box">
         <h2>{{@movie.title}} ({{year-from-date @movie.release_date}})</h2>
         <p class="info">
-            {{#each @movie.genres as |genre|}}
-                {{genre.name}},
-            {{/each}}
-            {{@movie.release_date}}
+            {{#if @movie.content_rating}}
+                <span class="content-rating">{{@movie.content_rating}}</span>
+            {{/if}}
+            <span>
+                {{#each @movie.genres as |genre|}}
+                    {{genre.name}},
+                {{/each}}
+                {{@movie.release_date}}
+            </span>
         </p>
         <h3>Overview</h3>
         <p class="overview">{{@movie.overview}}</p>
+        {{#if @movie.do_verification}}
+            do verification
+        {{/if}}
     </div>
 </div>

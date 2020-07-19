@@ -30,7 +30,19 @@ export default class ApplicationAdapter extends JSONAPIAdapter {
             break;
         }
 
-        return url.join('/') +
-            (handle === 'search' ? `?query=${param}&api_key=${ENV.TMDB_KEY}` : `?api_key=${ENV.TMDB_KEY}`);
+        const params = [
+            `api_key=${ENV.TMDB_KEY}`
+        ];
+
+        if (handle === 'search') {
+            params.push(`query=${param}`);
+        }
+
+        if (handle === 'movie') {
+            // get content ratings with the main info
+            params.push('append_to_response=releases');
+        }
+
+        return url.join('/') + '?' + params.join('&');
     }
 }

@@ -50,3 +50,12 @@
 
     background: rgba(0, 0, 0, 0.5);
 }
+
+.movie-info .content-rating
+{
+    margin-right: 5px;
+    padding: 3px;
+
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
