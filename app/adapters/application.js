@@ -7,6 +7,17 @@ export default class ApplicationAdapter extends JSONAPIAdapter {
         const url = [ENV.TMBD_API_BASE_URL];
 
         switch (handle) {
+        case 'search':
+            url.push(handle);
+            url.push('movie');
+            break;
+
+        case 'trending':
+            url.push(handle);
+            url.push('movie');
+            url.push(param);
+            break;
+
         case 'credits':
             url.push('movie');
             url.push(param);
@@ -19,6 +30,7 @@ export default class ApplicationAdapter extends JSONAPIAdapter {
             break;
         }
 
-        return url.join('/') + `?api_key=${ENV.TMDB_KEY}`;
+        return url.join('/') +
+            (handle === 'search' ? `?query=${param}&api_key=${ENV.TMDB_KEY}` : `?api_key=${ENV.TMDB_KEY}`);
     }
 }

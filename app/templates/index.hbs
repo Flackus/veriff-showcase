@@ -1,5 +1,5 @@
 <Search />
-{{#if @model.searchResults}}
-    <Search-results @movies={{@model.searchResults}} />
+{{#if @model.search}}
+    <Search-results @movies={{@model.search.results}} />
 {{/if}}
-<Trending @movies={{@model.trending}} @title="Trending" @isWeek={{@model.isWeek}} />
+<Trending @movies={{@model.trending.results}} @title="Trending" @isWeek={{@model.isWeek}} />
