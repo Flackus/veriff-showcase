@@ -9,10 +9,10 @@ export default class SearchComponent extends Component {
     @tracked query = this.router.currentRoute.queryParams.query;
 
     setValue() {
-        this.router.transitionTo('index', { queryParams: { query: this.query }});
+        this.router.transitionTo('index', { queryParams: { query: this.query || null }});
     }
 
     @action onQueryChange() {
-        debounce(this, this.setValue, 500);
+        debounce(this, this.setValue, 250);
     }
 }

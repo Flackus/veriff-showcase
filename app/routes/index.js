@@ -22,7 +22,7 @@ export default class IndexRoute extends Route {
         return {
             trending: await this.store.find('trending', timeWindow),
             isWeek: timeWindow === 'week',
-            search: await this.store.find('search', params.query)
+            search: params.query && await this.store.find('search', params.query)
         };
     }
 }
