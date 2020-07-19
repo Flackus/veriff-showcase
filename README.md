@@ -1,6 +1,6 @@
 # veriff-showcase
 
 ## TODO
-1. Optimize background image
-2. Scroller
-3. Write acceptance tests
+1. Scroller
+2. Write acceptance tests
+3. Actually implement verification
