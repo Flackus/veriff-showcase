@@ -1,44 +1,32 @@
-.search
-{
+.search {
     margin: 0 -30px;
-
     color: #fff;
-
     background: url(../assets/images/welcome-back.jpg) no-repeat;
     background-position: 0 -100px;
     background-size: cover;
     background-color: #000;
-
     text-align: center;
 }
 
-.search .text-box
-{
+.search .text-box {
     min-height: 120px;
     padding: 40px 20px;
-
     background: rgba(0, 0, 0, 0.5);
 }
 
-.search h2
-{
+.search h2 {
     font-size: 22px;
 }
 
-.search h3
-{
+.search h3 {
     margin-top: 10px;
-
     font-size: 17px;
 }
 
-.search input
-{
+.search input {
     width: 30%;
-
     margin-top: 40px;
     padding: 5px 10px;
-
     border: 1px solid #ccc;
     border-radius: 5px;
 }

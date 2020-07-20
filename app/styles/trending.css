@@ -1,9 +1,6 @@
-.trending .change-time-period
-{
+.trending .change-time-period {
     display: inline-block;
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
-
     color: blue;
 }
