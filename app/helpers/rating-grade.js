@@ -1,6 +1,6 @@
 import { helper as buildHelper } from '@ember/component/helper';
 
-export function rating([rating]) {
+export function ratingGrade([rating]) {
     if (rating > 8) {
         return 'good';
     }
@@ -10,4 +10,4 @@ export function rating([rating]) {
     return 'bad';
 }
 
-export default buildHelper(rating);
+export default buildHelper(ratingGrade);

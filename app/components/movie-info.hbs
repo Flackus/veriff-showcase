@@ -4,7 +4,12 @@
         <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{@movie.poster_path}}" alt="Movie poster" />
     {{/if}}
     <div class="text-box">
-        <h2>{{@movie.title}} ({{year-from-date @movie.release_date}})</h2>
+        <h2>
+            {{@movie.title}}
+            {{#if @movie.release_date}}
+                ({{year-from-date @movie.release_date}})
+            {{/if}}
+        </h2>
         <p class="info">
             {{#if @movie.content_rating}}
                 <span class="content-rating">{{@movie.content_rating}}</span>

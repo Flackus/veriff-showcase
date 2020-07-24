@@ -1,8 +1,12 @@
 <div class="cast-list thumbs-list">
-   <h2>Movie cast</h2>
-   <ul>
-        {{#each @cast as |person|}}
-            <Person-thumb @person={{person}} />
-        {{/each}}
-    </ul>
+    {{#if @cast.length}}
+        <h2>Movie cast</h2>
+        <ul>
+            {{#each @cast as |person|}}
+                <Person-thumb @person={{person}} />
+            {{/each}}
+        </ul>
+    {{else}}
+        <h2>Movie cast unknown</h2>
+    {{/if}}
 </div>

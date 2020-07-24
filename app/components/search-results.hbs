@@ -1,8 +1,12 @@
 <div class="search-results movie-list thumbs-list">
     <h2>Search results</h2>
-    <ul>
-        {{#each @movies as |movie|}}
-            <Movie-thumb @movie={{movie}} />
-        {{/each}}
-    </ul>
+    {{#if @movies.length}}
+        <ul>
+            {{#each @movies as |movie|}}
+                <Movie-thumb @movie={{movie}} />
+            {{/each}}
+        </ul>
+    {{else}}
+        <p>Nothing is found :(</p>
+    {{/if}}
 </div>
