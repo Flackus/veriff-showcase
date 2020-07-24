@@ -11,7 +11,8 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
+    min-width: 260px;
+    max-width: 940px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 0 30px;
@@ -41,4 +42,10 @@ body {
 
 .content {
     flex-grow: 1;
+}
+
+@media (max-width: 400px) {
+    .container {
+        border: 0;
+    }
 }

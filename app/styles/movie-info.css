@@ -1,7 +1,6 @@
 .movie-info {
     margin: 0 -30px;
-    padding: 40px 60px 0;
-    min-height: 300px;
+    padding: 0;
     background-color: #000;
     background-size: cover;
     color: #fff;
@@ -32,8 +31,8 @@
 }
 
 .movie-info .text-box {
-    min-height: 220px;
-    padding: 20px;
+    min-height: 260px;
+    padding: 30px;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -42,4 +41,15 @@
     padding: 3px;
     border: 1px solid #fff;
     border-radius: 3px;
+}
+
+.movie-info .release-date {
+    white-space: nowrap;
+}
+
+@media (max-width: 400px) {
+    .movie-info img {
+        float: none;
+        margin-bottom: 20px;
+    }
 }
