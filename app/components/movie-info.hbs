@@ -23,8 +23,6 @@
         </p>
         <h3>Overview</h3>
         <p class="overview">{{@movie.overview}}</p>
-        {{#if @movie.do_verification}}
-            do verification
-        {{/if}}
+        <Watch-Link @do_verification={{@movie.do_verification}} @link={{@movie.link_to_watch_page}} />
     </div>
 </div>

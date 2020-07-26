@@ -9,4 +9,5 @@ export default class MovieModel extends Model {
     @attr overview;
     @attr content_rating;
     @attr do_verification;
+    @attr link_to_watch_page;
 }
