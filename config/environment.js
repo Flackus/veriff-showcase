@@ -22,6 +22,11 @@ module.exports = function(environment) {
 
     ENV.TMBD_API_BASE_URL = 'https://api.themoviedb.org/3'
 
+    ENV.VERIFF_KEY = process.env.VERIFF_KEY;
+    if (!ENV.VERIFF_KEY) {
+        throw new Error('Veriff key is not provided');
+    }
+
     if (environment === 'test') {
         ENV.locationType = 'none';
 
